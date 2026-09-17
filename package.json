@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
+    "prestart": "npm run build",
     "start": "node dist/server.js",
     "dev": "tsx src/server.ts",
     "test": "tsx --test src/__tests__/**/*.test.ts"
